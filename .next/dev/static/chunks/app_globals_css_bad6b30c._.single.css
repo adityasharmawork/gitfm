@@ -593,6 +593,10 @@
     bottom: 25%;
   }
 
+  .bottom-4 {
+    bottom: calc(var(--spacing) * 4);
+  }
+
   .-left-12 {
     left: calc(var(--spacing) * -12);
   }
@@ -2078,6 +2082,10 @@
   .bg-\[\#E4405F\]\/20 {
     background-color: #e4405f33;
     background-color: lab(53.6329% 64.6316 21.9138 / .2);
+  }
+
+  .bg-\[\#FF813F\] {
+    background-color: #ff813f;
   }
 
   .bg-\[\#ff00ff\]\/10 {
@@ -3762,6 +3770,13 @@
   }
 
   @media (hover: hover) {
+    .hover\:bg-\[\#FF813F\]\/90:hover {
+      background-color: #ff813fe6;
+      background-color: lab(68.2325% 45.9103 57.0429 / .9);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:bg-\[\#ff00ff\]\/10:hover {
       background-color: #ff00ff1a;
       background-color: lab(60.1689% 93.5397 -60.5008 / .1);
@@ -4203,6 +4218,13 @@
 
   .focus-visible\:outline-ring:focus-visible {
     outline-color: var(--ring);
+  }
+
+  .active\:scale-95:active {
+    --tw-scale-x: 95%;
+    --tw-scale-y: 95%;
+    --tw-scale-z: 95%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
   }
 
   .active\:bg-sidebar-accent:active {

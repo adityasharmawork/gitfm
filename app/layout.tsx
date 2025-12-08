@@ -3,41 +3,26 @@ import type { Metadata, Viewport } from "next"
 import { JetBrains_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
+import { BuyMeACoffeeWidget } from "../components/BuyMeACoffeeWidget" // <-- adjust path if needed
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
 
-export const metadata: Metadata = {
-  title: "CodeSynth 2025 | Hear Your Code. See Your Legend.",
-  description:
-    "Transform your GitHub history into a multisensory experience with audio synthesis, RPG tarot cards, and a 3D cyberpunk city visualization.",
-  generator: "v0.app",
-  keywords: ["GitHub", "Unwrapped", "Developer", "Stats", "Visualization", "2025"],
-  openGraph: {
-    title: "CodeSynth 2025",
-    description: "Hear Your Code. See Your Legend.",
-    type: "website",
-  },
-}
+export const metadata: Metadata = { /* ...as you already have... */ }
 
-export const viewport: Viewport = {
-  themeColor: "#ff00ff",
-  width: "device-width",
-  initialScale: 1,
-}
+export const viewport: Viewport = { /* ...as you already have... */ }
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="dark">
       <body className={`${jetbrainsMono.variable} font-mono antialiased bg-background min-h-screen`}>
         {children}
         <Analytics />
+        <BuyMeACoffeeWidget /> {/* 👈 this loads the widget on the client */}
       </body>
     </html>
   )
