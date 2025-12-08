@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///home/popos/Downloads/code-synth-2025-app%20%281%29/app/api/auth/logout/route.ts"],"sourcesContent":["import { type NextRequest, NextResponse } from \"next/server\"\n\nexport async function POST(request: NextRequest) {\n  const response = NextResponse.json({ success: true })\n\n  response.cookies.delete(\"github_session\")\n\n  return response\n}\n"],"names":[],"mappings":";;;;AAAA;;AAEO,eAAe,KAAK,OAAoB;IAC7C,MAAM,WAAW,gJAAY,CAAC,IAAI,CAAC;QAAE,SAAS;IAAK;IAEnD,SAAS,OAAO,CAAC,MAAM,CAAC;IAExB,OAAO;AACT"}}]
-}
