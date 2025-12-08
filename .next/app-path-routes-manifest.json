@@ -1,0 +1,12 @@
+{
+  "/[username]/page": "/[username]",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/auth/github/callback/route": "/api/auth/github/callback",
+  "/api/auth/github/route": "/api/auth/github",
+  "/api/auth/logout/route": "/api/auth/logout",
+  "/api/auth/session/route": "/api/auth/session",
+  "/api/github/route": "/api/github",
+  "/challenge/page": "/challenge",
+  "/page": "/"
+}
