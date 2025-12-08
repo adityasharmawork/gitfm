@@ -593,7 +593,7 @@ export function VideoSection({ data, vibeMode }: VideoSectionProps) {
             ctx.shadowColor = "#ff00ff"
             ctx.shadowBlur = 40
             ctx.font = "bold 100px 'Segoe UI', sans-serif"
-            ctx.fillText("gitfm.com", 0, 60)
+            ctx.fillText("gitfm.vercel.app", 0, 60)
             ctx.shadowBlur = 0
 
             ctx.restore()
@@ -609,7 +609,7 @@ export function VideoSection({ data, vibeMode }: VideoSectionProps) {
         ctx.font = "24px 'Segoe UI', sans-serif"
         ctx.fillStyle = "rgba(255, 255, 255, 0.4)"
         ctx.textAlign = "right"
-        ctx.fillText("gitfm.com", WIDTH - 50, HEIGHT - 50)
+        ctx.fillText("gitfm.vercel.app", WIDTH - 50, HEIGHT - 50)
         ctx.textAlign = "left"
         ctx.fillText(`@${data.user.login}`, 50, HEIGHT - 50)
         ctx.textAlign = "center"

@@ -290,14 +290,14 @@ export function VideoGenerator({ data, vibeMode, onClose, embedded = false }: Vi
             ctaGradient.addColorStop(1, "#00ffff")
             ctx.fillStyle = ctaGradient
             ctx.font = "bold 96px 'Segoe UI', sans-serif"
-            ctx.fillText("gitfm.com", 0, 50)
+            ctx.fillText("gitfm.vercel.app", 0, 50)
 
             ctx.restore()
 
             // Watermark
             ctx.font = "24px 'Segoe UI', sans-serif"
             ctx.fillStyle = "rgba(255, 255, 255, 0.5)"
-            ctx.fillText("gitfm.com", WIDTH / 2, HEIGHT - 100)
+            ctx.fillText("gitfm.vercel.app", WIDTH / 2, HEIGHT - 100)
 
             // Explosion particles
             if (sceneProgress < 0.3 && frame % 2 === 0) {
@@ -310,7 +310,7 @@ export function VideoGenerator({ data, vibeMode, onClose, embedded = false }: Vi
         ctx.font = "20px 'Segoe UI', sans-serif"
         ctx.fillStyle = "rgba(255, 255, 255, 0.3)"
         ctx.textAlign = "right"
-        ctx.fillText("gitfm.com", WIDTH - 40, HEIGHT - 40)
+        ctx.fillText("gitfm.vercel.app", WIDTH - 40, HEIGHT - 40)
         ctx.textAlign = "center"
 
         // CRT scanlines effect

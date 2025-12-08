@@ -340,7 +340,7 @@
 // //             // Footer
 // //             ctx.font = "bold 50px 'Segoe UI'"
 // //             ctx.fillStyle = "#ff00ff"
-// //             ctx.fillText("gitfm.com", 0, 220)
+// //             ctx.fillText("gitfm.vercel.app", 0, 220)
             
 // //             ctx.restore()
 // //         }
@@ -851,7 +851,7 @@
 //             // Footer
 //             ctx.font = "bold 50px 'Segoe UI'"
 //             ctx.fillStyle = "#ff00ff"
-//             ctx.fillText("gitfm.com", 0, 220)
+//             ctx.fillText("gitfm.vercel.app", 0, 220)
             
 //             ctx.restore()
 //         }
@@ -1504,7 +1504,7 @@ export function StoryModeVideo({ data }: VideoProps) {
 
             ctx.fillStyle = "#aaa"
             ctx.font = "40px 'Courier New'"
-            ctx.fillText("gitfm.com 2025", WIDTH/2, HEIGHT/2 + 300)
+            ctx.fillText("gitfm.vercel.app 2025", WIDTH/2, HEIGHT/2 + 300)
         }
 
         ctx.restore()
