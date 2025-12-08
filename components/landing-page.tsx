@@ -5,7 +5,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Switch } from "@/components/ui/switch"
-import { Sparkles, Flame, Github, Zap, Music, Building2, LogOut, User, Trophy } from "lucide-react"
+import { Sparkles, Flame, Github, Zap, Music, Building2, LogOut, User, Trophy, Swords } from "lucide-react"
 import Image from "next/image"
 
 interface SessionUser {
@@ -273,6 +273,38 @@ export function LandingPage({ sessionUser, onGenerate, onLogout, error }: Landin
             )}
           </div>
         </div>
+
+        {/* Duet Feature Promotion */}
+        <section className="w-full max-w-2xl mt-16 space-y-6">
+          <div className="p-6 rounded-xl border border-[#00ffff]/30 bg-gradient-to-br from-[#00ffff]/10 via-[#ff00ff]/10 to-[#00ffff]/10 relative overflow-hidden">
+            {/* Decorative elements */}
+            <div className="absolute top-0 left-0 w-32 h-32 bg-[#00ffff]/20 rounded-full blur-2xl" />
+            <div className="absolute bottom-0 right-0 w-24 h-24 bg-[#ff00ff]/20 rounded-full blur-2xl" />
+
+            <div className="relative z-10 text-center space-y-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00ffff]/20 border border-[#00ffff]/30">
+                <Swords className="w-4 h-4 text-[#00ffff]" />
+                <span className="text-xs font-bold text-[#00ffff]">NEW FEATURE</span>
+              </div>
+
+              <h3 className="text-2xl md:text-3xl font-bold">
+                <span className="text-[#00ffff]">Duet</span>{" "}
+                <span className="text-[#ff00ff]">Battle Mode</span>
+              </h3>
+
+              <p className="text-muted-foreground max-w-md mx-auto">
+                Challenge your friends to an epic code comparison! See who has more commits, stars, and streaks in a side-by-side battle.
+              </p>
+
+              <Link href="/duet">
+                <Button className="mt-4 bg-gradient-to-r from-[#00ffff] to-[#ff00ff] hover:from-[#33ffff] hover:to-[#ff33ff] text-black font-bold px-8">
+                  <Swords className="w-4 h-4 mr-2" />
+                  Start a Battle
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
 
         {/* Challenge Promotion Section */}
         <section className="w-full max-w-2xl mt-16 space-y-6">
