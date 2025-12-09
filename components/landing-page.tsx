@@ -149,7 +149,7 @@ export function LandingPage({ sessionUser, onGenerate, onLogout, error }: Landin
             </div>
           </div>
 
-          <div className="p-6 rounded-lg border border-[#00ffff]/30 bg-card/50 backdrop-blur-sm neon-border-cyan space-y-4">
+          {/* <div className="p-6 rounded-lg border border-[#00ffff]/30 bg-card/50 backdrop-blur-sm neon-border-cyan space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-[#00ffff]/20 flex items-center justify-center">
                 <User className="w-5 h-5 text-[#00ffff]" />
@@ -183,14 +183,14 @@ export function LandingPage({ sessionUser, onGenerate, onLogout, error }: Landin
             <p className="text-xs text-center text-muted-foreground">
               Uses public API with limited requests. Sign in below for unlimited access.
             </p>
-          </div>
+          </div> */}
 
           {/* Divider */}
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4">
             <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#ff00ff]/50 to-transparent" />
             <span className="text-xs text-muted-foreground">or</span>
             <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#ff00ff]/50 to-transparent" />
-          </div>
+          </div> */}
 
           <div className="p-6 rounded-lg border border-[#ff00ff]/30 bg-card/50 backdrop-blur-sm neon-border-pink space-y-4">
             {sessionUser ? (
